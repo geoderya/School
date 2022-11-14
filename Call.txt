@@ -1,0 +1,51 @@
+// initialize => constructor => setisim()
+okul gaffarOkan = New okul('Gaffar Okan İlk Öğretim Okulu'); // init
+okul cengizTopel = New okul('Cengiz Topel İlk Öğretim Okulu');
+okul sutciImam = New okul('Sütçü imam ilk öğretim okulu');
+    
+    
+// setter methodları ile öğrenci sayılarını tanımladık.
+gaffarOkan.setogrenciSayisi(1000); // 1100
+cengizTopel.setogrenciSayisi(2000); // 2050 
+sutciImam.setogrenciSayisi(3000); // 3070
+
+
+// okullara öğrenci ataması 
+
+for(Integer ogrNum=1;ogrNum<=100;ogrNum++){
+    gaffarOkan.setogrenciListesi(' Öğrenci Adı Soyadi  '+ogrNum);
+}
+
+
+for(Integer ogrNum=1;ogrNum<=50;ogrNum++){
+    cengizTopel.setogrenciListesi(' Öğrenci Adı Soyadi  '+ogrNum);
+}
+
+for(Integer ogrNum=1;ogrNum<=70;ogrNum++){
+    sutciImam.setogrenciListesi(' Öğrenci Adı Soyadi  '+ogrNum);
+}
+
+
+
+// okullara ait bilgileri getter methodları ile aldık.
+
+System.debug('--------------------------------');
+System.debug(gaffarOkan.getisim());
+System.debug(gaffarOkan.getogrenciSayisi());
+System.debug(gaffarOkan.getogrenciListesi());
+System.debug('--------------------------------');
+System.debug(cengizTopel.getisim());
+System.debug(cengizTopel.getogrenciSayisi());
+System.debug(cengizTopel.getogrenciListesi());
+System.debug('--------------------------------');
+System.debug(sutciImam.getisim());
+System.debug(sutciImam.getogrenciSayisi());
+System.debug(sutciImam.getogrenciListesi());
+System.debug('--------------------------------');
+System.debug('Tüm okulların bilgisi ...');
+System.debug(okul.gettoplamOgrenciSayisi());
+
+gaffarOkan.setisim('Gaffar Okan İlk ve Orta Öğretim Okulu');
+
+System.debug('--------------------------------');
+System.debug(gaffarOkan.getisim());

@@ -1,0 +1,32 @@
+public class okul {
+    // properties
+    private String isim;   // 2 method  getisim  setisim(String okulAdi)
+    private Integer ogrenciSayisi; // 2 method getogrenciSayisi    setogrenciSayisi(Integer ogrSayisi)
+    
+
+    // constuctor method
+    public okul(String okulAdi){
+        System.debug('Okul constructor işlemi çalışıyor... ....');
+        setisim(okulAdi);
+        System.debug(isim + ' isimli okul oluşturuldu....');
+    }
+    
+    // methods
+   
+    public void setogrenciSayisi(Integer ogrSayisi){
+        ogrenciSayisi=ogrSayisi;
+    }
+        
+    public Integer getogrenciSayisi(){
+        return ogrenciSayisi;
+    }    
+    
+    public void setisim(String okulAdi){
+       isim= okulAdi;
+    } 
+    public String getisim(){
+        
+        return isim;
+    }
+    
+}
