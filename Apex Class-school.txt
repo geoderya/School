@@ -1,0 +1,18 @@
+public class okul {
+    // properties
+    private String isim;
+    
+
+    // constuctor method
+    public okul(String okulAdi){
+        System.debug('Okul constructor işlemi çalışıyor... ....');
+        setisim(okulAdi);
+        System.debug(isim + ' isimli okul oluşturuldu....');
+    }
+    
+    // methods
+    public void setisim(String okulAdi){
+       isim= okulAdi;
+    } 
+    
+}
